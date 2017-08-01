@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -22,7 +23,7 @@ int main()
 	do
 	{
 		system("cls");
-		cout<<"Inserte el numero de la operacion que quiere realizar"<<endl<<"1.suma"<<endl<<"2.resta"<<endl<<"3.multiplicacion"<<endl<<"4.division"<<endl;
+		cout<<"Inserte el numero de la operacion que quiere realizar"<<endl<<"1.suma"<<endl<<"2.resta"<<endl<<"3.multiplicacion"<<endl<<"4.division"<<endl<<"5.Potencia"<<endl;
 		cin>>opt;
 		system("cls");
 	
@@ -54,7 +55,13 @@ int main()
 				cout<<total;
 				break;
 			}
+			case 5:
+			{
+				total=pow(var1,var2);
+				cout<<total;
+				break;	
+			}
 		}
 	}
-	while(!(opt==1 || opt==2 || opt==3 || opt==4));
+	while(!(opt==1 || opt==2 || opt==3 || opt==4 || opt==5));
 }
